@@ -14,4 +14,3 @@ def findLexicographic(str):
 
 str = "123"
 findLexicographic(str)
-print(arr)

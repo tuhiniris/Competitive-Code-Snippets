@@ -1,7 +1,6 @@
-arr = []
 def printLexicographicOrder(str, result=""):
 	if len(result) == len(str):
-		arr.append(result)
+		print(result, end=' ')
 		return
 	for c in str:
 		printLexicographicOrder(str, result + c)
@@ -14,4 +13,3 @@ def findLexicographic(str):
 
 str = "123"
 findLexicographic(str)
-print(arr)
