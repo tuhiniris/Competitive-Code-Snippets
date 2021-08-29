@@ -11,7 +11,8 @@ def fibonacci(n):
     if n in memo:
         return memo[n]
     else:
-        return fibonacci(n-1)+fibonacci(n-2)
+        memo[n] = fibonacci(n-1)+fibonacci(n-2)
+        return memo[n]
 
 def checkprime(n):
     flag = True
