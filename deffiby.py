@@ -1,3 +1,6 @@
+import sys
+sys.setrecursionlimit(100000000)
+
 memo = {0:0,1:1}
 
 def factorial(n):
@@ -23,8 +26,8 @@ def checkprime(n):
     return flag    
         
 print(factorial(5)) 
-print(fibonacci(9))
-print(checkprime(8))
+print(fibonacci(1000))
+print(checkprime(967))
 
 n = 100
 for i in range(1,n+1):
